@@ -1,0 +1,298 @@
+
+		/*		All Page, container		*/
+
+
+        body{
+
+            background-color: black;
+            font-family: Verdana;
+        
+            overflow-x: hidden;
+        
+        }
+        
+        
+        .container{
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        
+            width: 80vw;
+            height: 100%;
+        
+            margin-left: auto;
+            margin-right: auto;
+        
+            background-color: black;
+                
+        }
+        
+        
+                /*		Navigation		*/
+        
+        
+        nav{
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        
+            width: 75vw;
+            color: white;
+            
+        }
+        
+        
+        nav > ul{
+        
+            display: flex;
+            flex-direction: row-reverse;
+            width: 50vw;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+        
+        }
+        
+        
+        nav > ul > li{
+            
+            padding: 8px;
+            font-weight: 700;
+            flex-shrink: 0;
+        
+            list-style: none;
+            letter-spacing: 1px;
+            
+            transition: 0.3s;
+            border-radius: 5px;
+        
+        }
+        
+        
+        a > li:hover{
+        
+            cursor: pointer;
+            background-color: #303030;
+        
+        }
+        
+        
+        a > li{
+        
+            padding: 8px;
+            font-weight: 700;
+            flex-shrink: 0;
+        
+            list-style: none;
+            letter-spacing: 1px;
+            
+            transition: 0.3s;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+        
+        }
+        
+        
+        a{
+        
+            text-decoration: none;
+        
+        }
+        
+        
+        section{
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            width: 80vw;
+            height: 100%;
+            margin-top: 5vw;
+            margin-bottom: 5vw;
+            margin-left: auto;
+            margin-right: auto;
+        
+            border: 1px solid aliceblue;
+            padding-top: 3vw;
+            padding-bottom: 3vw;
+        
+            color: white;
+        
+        }
+        
+        
+        section > p{
+        
+            width: 60vw;
+            text-align: center;
+        
+        }
+        
+        
+        section > h1{
+        
+            width: 70vw;
+            color: rgb(255, 209, 183);
+            text-align: center;
+        
+        }
+        
+
+                 /*   Main Article, fotos, info   */
+
+
+
+
+article{
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.article-box{
+
+   display: flex;
+   align-items: center;
+
+   margin-top: 5vw;
+
+
+
+}
+
+
+.article-box-text{
+
+  margin-top: 7vw;
+
+}
+
+.article-jpg{
+
+    float: left;
+
+}
+
+
+img{
+
+    width: clamp(300px, 30vw, 600px);
+    height: clamp(300px, 30vw, 600px);
+
+  
+
+}
+
+
+
+        
+        
+                /*	Media Screen and keyframes	*/
+        
+        
+        
+        @media screen and (max-width: 1200px) {
+            
+            
+        nav{
+        
+            justify-content: start;
+            
+            width: 100vw;
+            
+        }
+        
+        
+        nav > ul{
+        
+            width: 80vw;
+        
+        }
+    }
+
+        
+        
+        @media screen and (max-width: 900px) {
+        
+            nav{
+        
+                justify-content: start;
+                
+                width: 100vw;
+                
+            }
+        
+        
+            nav > ul{
+        
+                width: 30vw;
+                flex-direction: column;
+            
+            }
+
+
+
+            article{
+
+                color: white;
+            
+            }
+            
+            
+            .article-box{
+            
+                display: flex;
+                flex-direction: column;
+
+                border: 1px solid rgb(194, 215, 255);
+                padding: 10px;
+                margin-top: 10px;
+            
+            }
+
+            .article-box-jpg{
+
+                display: flex;
+                flex-direction: column;
+
+            }
+            
+
+            img{
+
+                float: none;
+
+            }
+            
+        
+        }
+        
+        
+        @media screen and (max-width: 600px) {
+        
+            nav{
+        
+                justify-content: start;
+                
+                width: 100vw;
+                
+            }
+        
+        
+            nav > ul{
+        
+                width: 50vw;
+                flex-direction: column;
+            
+            }
+            
+        
+        }

@@ -1,0 +1,744 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta lang="pl">
+    <link rel="stylesheet" href="stylequiz.css" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+
+
+        <nav>
+
+            <ul>
+
+                <a href="index.html">
+                    <li>Main page</li>
+                </a>
+
+                <a href="moons.html">
+                    <li>Moons</li>
+                </a>
+
+                <a href="stars.html">
+                    <li>Stars</li>
+                </a>
+
+            </ul>
+
+        </nav>
+
+
+        <article>
+
+            <header class="article-header">
+
+                <h2>Welcome to Quiz. You can test your knowledge of astronomy here. We will count your points at the
+                    end. Good luck!</h2>
+
+            </header>
+
+            <div class="article-box article-box0">
+
+                <button class="article-box-button-start" onclick="putQuestion(1);">Start Game</button>
+
+
+            </div>
+
+
+            <!--    Pytanie 1   -->
+
+            <div class="article-box article-box1">
+
+
+                <h4 class="question question1">Which statement describes the atmosphere of the planet correctly?</h4>
+
+
+                <div class="article-box-answer">
+
+                    <button class="answer answer1" onclick="
+
+                        hideQuestion();
+
+                        putQuestion(2);
+                        
+                        ">Earth is mostly oxygen</button>
+
+
+
+
+                    <button class="answer answer2" onclick="
+
+                    points ++;
+
+                    hideQuestion();
+
+                    putQuestion(2);
+                    
+                    ">Saturn is mostly helium</button>
+
+
+
+
+                    <button class="answer answer3" onclick="
+                        
+                    hideQuestion();
+
+                    putQuestion(2);
+                    
+                    ">Mercury is mostly nitrogen</button>
+
+
+
+
+                    <button class="answer answer4" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(2);
+                    
+                    ">Venus is mostly carbon dioxide</button>
+
+
+
+                </div>
+
+            </div>
+
+
+            <!--    Pytanie 2   -->
+
+            <div class="article-box article-box2">
+
+
+                <h4 class="question question2">To weigh roughly two-thirds less than what you do on earth, which planet would you have to be on?</h4>
+
+
+                <div class="article-box-answer">
+
+                    <button class="answer answer1" onclick="
+
+                        hideQuestion();
+
+                        putQuestion(3);
+                        
+                        ">Uranus</button>
+
+
+
+
+                    <button class="answer answer2" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(3);
+                    
+                    "> Venus</button>
+
+
+
+
+                    <button class="answer answer3" onclick="
+
+                    points ++;
+                        
+                    hideQuestion();
+
+                    putQuestion(3);
+                    
+                    ">Mars</button>
+
+
+
+
+                    <button class="answer answer4" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(3);
+                    
+                    ">Jupiter</button>
+
+
+
+                </div>
+
+            </div>
+
+            <!--    Pytanie 3   -->
+
+            <div class="article-box article-box3">
+
+
+                <h4 class="question question3">How old is the solar system?</h4>
+
+
+                <div class="article-box-answer">
+
+                    <button class="answer answer1" onclick="
+
+                        hideQuestion();
+
+                        putQuestion(4);
+                        
+                        ">5000 years</button>
+
+
+
+
+                    <button class="answer answer2" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(4);
+                    
+                    ">5 million years</button>
+
+
+
+
+                    <button class="answer answer3" onclick="
+                        
+                    hideQuestion();
+
+                    putQuestion(4);
+                    
+                    ">500 million years</button>
+
+
+
+
+                    <button class="answer answer4" onclick="
+
+                    points ++;
+
+                    hideQuestion();
+
+                    putQuestion(4);
+                    
+                    "> 5 billion years</button>
+
+
+
+                </div>
+
+            </div>
+
+
+            <!--    Pytanie 4   -->
+
+
+            <div class="article-box article-box4">
+
+
+                <h4 class="question question4">How long does it take for light from the sun to reach earth?</h4>
+
+
+                <div class="article-box-answer">
+
+                    <button class="answer answer1" onclick="
+
+                        hideQuestion();
+
+                        putQuestion(5);
+                        
+                        ">1 minute</button>
+
+
+
+
+                    <button class="answer answer2" onclick="
+
+                    points ++;
+
+                    hideQuestion();
+
+                    putQuestion(5);
+                    
+                    ">8 minutes</button>
+
+
+
+
+                    <button class="answer answer3" onclick="
+                        
+                    hideQuestion();
+
+                    putQuestion(5);
+                    
+                    "> Instantaneous</button>
+
+
+
+
+                    <button class="answer answer4" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(5);
+                    
+                    "> 24 hours</button>
+
+
+
+                </div>
+
+            </div>
+
+
+            <!--    Pytanie 5   -->
+
+
+            <div class="article-box article-box5">
+
+
+                <h4 class="question question5">It takes the sun 225-250 million years to do a single revolution of the milky way galaxy. how fast does the sun travel?</h4>
+
+
+                <div class="article-box-answer">
+
+                    <button class="answer answer1" onclick="
+                        
+                        points ++;
+
+                        hideQuestion();
+
+                        putQuestion(6);
+                        
+                        "> 220km in a second</button>
+
+
+
+
+                    <button class="answer answer2" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(6);
+                    
+                    ">220km in a minute</button>
+
+
+
+
+                    <button class="answer answer3" onclick="
+                        
+                    hideQuestion();
+
+                    putQuestion(6);
+                    
+                    ">220km in a hour</button>
+
+
+
+
+                    <button class="answer answer4" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(6);
+                    
+                    ">220km in a year</button>
+
+
+
+                </div>
+
+            </div>
+
+
+            <!--    Pytanie 6   -->
+
+
+            <div class="article-box article-box6">
+
+
+                <h4 class="question question6">In 2007, voyager 2 crossed the heliosheath boundary and into the vast region at the edge of our solar system where the solar wind runs up against the thin gas between the stars. What did this crossing confirm about the shape of our solar system?</h4>
+
+
+                <div class="article-box-answer">
+
+                    <button class="answer answer1" onclick="
+
+                        hideQuestion();
+
+                        putQuestion(7);
+                        
+                        ">It’s round</button>
+
+
+
+
+                    <button class="answer answer2" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(7);
+                    
+                    ">It’s squashed</button>
+
+
+
+
+                    <button class="answer answer3" onclick="
+                        
+                    hideQuestion();
+
+                    putQuestion(7);
+                    
+                    ">It’s like a donut</button>
+
+
+
+
+                    <button class="answer answer4" onclick="
+
+                    points ++;
+
+                    hideQuestion();
+
+                    putQuestion(7);
+                    
+                    ">It’s a horseshoe shape</button>
+
+
+
+                </div>
+
+            </div>
+
+
+
+            <!--    Pytanie 7   -->
+
+
+            <div class="article-box article-box7">
+
+
+                <h4 class="question question7">How many planets are there in our solar system?</h4>
+
+
+                <div class="article-box-answer">
+
+                    <button class="answer answer1" onclick="
+                        
+                        points ++;
+
+                        hideQuestion();
+
+                        putQuestion(8);
+                        
+                        ">Eight</button>
+
+
+
+
+                    <button class="answer answer2" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(8);
+                    
+                    ">Nine</button>
+
+
+
+
+                    <button class="answer answer3" onclick="
+                        
+                    hideQuestion();
+
+                    putQuestion(8);
+                    
+                    ">Ten</button>
+
+
+
+
+                    <button class="answer answer4" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(8);
+                    
+                    ">Eleven</button>
+
+
+
+                </div>
+
+            </div>
+
+
+            <!--    Pytanie 8   -->
+
+
+            <div class="article-box article-box8">
+
+
+                <h4 class="question question8">How many moons orbiting pluto have been discovered?</h4>
+
+
+                <div class="article-box-answer">
+
+                    <button class="answer answer1" onclick="
+
+                        hideQuestion();
+
+                        putQuestion(9);
+                        
+                        ">1</button>
+
+
+
+
+                    <button class="answer answer2" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(9);
+                    
+                    ">4</button>
+
+
+
+
+                    <button class="answer answer3" onclick="
+                                            
+                    points ++;
+                        
+                    hideQuestion();
+
+                    putQuestion(9);
+                    
+                    ">5</button>
+
+
+
+
+                    <button class="answer answer4" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(9);
+                    
+                    ">8</button>
+
+
+
+                </div>
+
+            </div>
+
+
+            <!--    Pytanie 9   -->
+
+
+            <div class="article-box article-box9">
+
+
+                <h4 class="question question9">What is the name of the first spacecraft to do a flyby of pluto?</h4>
+
+
+                <div class="article-box-answer">
+
+                    <button class="answer answer1" onclick="
+
+                        hideQuestion();
+
+                        putQuestion(10);
+                        
+                        "> Amity</button>
+
+
+
+
+                    <button class="answer answer2" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(10);
+                    
+                    ">New Hope</button>
+
+
+
+
+                    <button class="answer answer3" onclick="
+                        
+                    hideQuestion();
+
+                    putQuestion(10);
+                    
+                    ">Discoverer</button>
+
+
+
+
+                    <button class="answer answer4" onclick="
+
+                    points ++;
+
+                    hideQuestion();
+
+                    putQuestion(10);
+                    
+                    ">New Horizons</button>
+
+
+
+                </div>
+
+            </div>
+
+
+            <!--    Pytanie 10   -->
+
+
+            <div class="article-box article-box10">
+
+
+                <h4 class="question question10">What is the temperature range on the surface of mercury?</h4>
+
+
+                <div class="article-box-answer">
+
+                    <button class="answer answer1" onclick="
+
+                        hideQuestion();
+
+                        putQuestion(11);
+                        
+                        ">-125°C to +20°C (-195°F to +70°F)</button>
+
+
+
+
+                    <button class="answer answer2" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(11);
+                    
+                    ">-173°C to +127°C. (-280°F to +260°F)</button>
+
+
+
+
+                    <button class="answer answer3" onclick="
+
+                    points ++;
+                        
+                    hideQuestion();
+
+                    putQuestion(11);
+                    
+                    ">-170°C to +449°C. (-275°F to +840°F)
+                    </button>
+
+
+
+
+                    <button class="answer answer4" onclick="
+
+                    hideQuestion();
+
+                    putQuestion(11);
+                    
+                    ">-89°C to +58°C. (-129°F to +136°F)</button>
+
+
+
+                </div>
+
+            </div>
+
+
+            <!--    End of Game   -->
+
+
+            <div class="article-box article-box11">
+
+
+                <h3 class="article-box11-points" onclick=""></h3>
+                <h4 class="article-box11-play-again" onclick="
+                
+                hideQuestion();
+
+                putQuestion(1);
+
+                points = 0;
+                
+                ">Do you want to play again? Click Here.</h4>
+
+
+
+            </div>
+
+
+
+        </article>
+
+
+
+    </div>
+
+
+
+    <script>
+
+        let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        let numberOfQuestion;
+
+        let points = 0;
+
+        let answerChoose;
+
+        let box;
+
+        let startButton = document.querySelector('.article-box-button-start');
+
+        function putQuestion(number) {
+
+            document.querySelector('.article-header').style.display = 'none';
+
+            startButton.style.display = 'none';
+
+            box = document.querySelector(`.article-box${number}`);
+
+            numberOfQuestion = number;
+
+            box.style.display = 'flex';
+
+            showPoints();
+
+        }
+
+        function hideQuestion() {
+
+            box.style.display = 'none';
+
+        }
+
+
+        function showPoints() {
+
+            document.querySelector('.article-box11-points').innerHTML = `Here's the sum of your points: ${points}!`;
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
